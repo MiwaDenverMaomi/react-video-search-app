@@ -1,0 +1,46 @@
+@import 'common.scss';
+
+.header {
+  width:100%;
+  padding:10px;
+  background-color:#000;;
+  margin-bottom:40px;
+  text-align:center;
+  box-sizing:border-box;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+
+  &__btn{
+    display:block;
+    position:absolute;
+    right:1%;
+    border-radius:5px;
+    color:#fff;
+    border:none;
+    padding: 2%;
+    background-color:transparent;
+    text-decoration:underline;
+
+    &:hover{
+      cursor:pointer;
+      opacity:.8;
+    }
+  }
+
+  &__logo{
+    width:100%;
+    color:#fff;
+    margin:0 auto;
+  }
+@media screen and (min-width: 1025px) {
+ padding:10px;
+ &__btn{
+    padding:0.3%;
+    background-color:blue;
+    text-decoration:none;
+  }
+
+}
+}

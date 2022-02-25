@@ -1,0 +1,49 @@
+@import 'common.scss';
+
+.app {
+  width:100%;
+  min-height:100vh;
+  opacity:.8;
+
+  &.default{
+    background-image: linear-gradient(180deg, #FF5F6D 0%, #FFC371 100%);
+  }
+  &.a{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  }
+  &.b{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  }
+  &.c{
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  }
+  &.d{
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  }
+  &.e{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  }
+  &.f{
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  }
+  &.g{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  }
+  &.h{
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  }
+  &.i{
+    background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+  }
+
+  &__bg-container{
+    width:100%;
+    margin:0 auto;
+    height:100%;
+    position:relative;
+  }
+
+  &__title{
+    text-align:center;
+  }
+}

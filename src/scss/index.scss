@@ -1,0 +1,21 @@
+@import 'common.scss';
+@import 'app.scss';
+@import 'form.scss';
+@import 'header.scss';
+@import 'results.scss';
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color:$font-color;
+  font-size:1.6rem;
+  min-height:auto;
+  // background-attachment:scroll;
+  // background-size:cover;
+
+
+}

@@ -1,0 +1,21 @@
+$font-color:#333;
+$font-subcolor:#a9a9a9;
+$font-xl:4.5rem;
+$font-l:3rem;
+$font-m:1.5rem;
+$font-s:1.2rem;
+
+.common{
+  &__menu-title{
+    text-align:center;
+  }
+  &__err{
+    color:red;
+    font-size:$font-s;
+  }
+
+  &__notice--under{
+    font-size:$font-s;
+    margin-bottom:20px;
+  }
+}

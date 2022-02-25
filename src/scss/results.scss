@@ -1,0 +1,147 @@
+@import './common.scss';
+$item-height--l:300px;
+$item-height--s:250px;
+.results{
+	width:100%;
+
+  &__summery{
+		font-size:$font-m;
+		margin-bottom:2%;
+		text-align:center;
+	}
+
+	&__container{
+		display: flex;
+  	flex-wrap: wrap;
+		width:100%;
+		margin:0 auto;
+		position:relative;
+	}
+
+	@mixin item{
+		background-color: #fff;
+		margin:2.5%;
+		overflow: hidden;
+		position:relative;
+    box-shadow: 10px 1px 10px 1px rgba(0, 0, 0, .2);
+		border-radius:10px;
+	}
+
+	&__item{
+	  @include item;
+  	width: 100%;
+		height:$item-height--l;
+	}
+
+	&__window{
+		position: relative;
+  	width:100%;
+	}
+	&__window:before{
+		content:"";
+  	display: block;
+  	padding-top: 56.25%;
+	}
+
+	&__iframe{
+		position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+	}
+
+	&__video-container{
+		width: 100%;
+		height:56%;
+		margin:0 auto;
+
+	}
+
+	&__video-image{
+		width:100%;
+		height:100%;
+
+	}
+	&__video-title{
+		width:100%;
+		height:$item-height--l*0.14;
+		padding:2%;
+		text-overflow: ellipsis;
+		overflow:hidden;
+		box-sizing:border-box;
+
+	}
+	&__video-author{
+		width:100%;
+		padding:2%;
+		height:$item-height--l*0.1;
+		font-size:$font-s;
+		text-overflow: ellipsis;
+		overflow:hidden;
+		box-sizing:border-box;
+
+	}
+	&__video-description{
+		width:100%;
+		height:$item-height--l*0.1;
+		color:$font-subcolor;
+		padding:2%;
+		font-size:$font-s;
+		text-overflow: ellipsis;
+		box-sizing:border-box;
+	}
+
+	&__link{
+			display:block;
+			margin-right:4%;
+			text-decoration:none;
+			color:blue;
+			text-align:right;
+			height:$item-height--l*0.1;
+	}
+
+	&__btn--s{
+		position:absolute;
+		top:1%;
+		right:1%;
+		color:#333;
+		border:none;
+		border-radius:3px;
+
+		&:hover{
+			cursor:pointer;
+			opacity:0.7;
+		}
+
+		&.liked{
+		background-color:lightseagreen;
+		}
+
+		&.like{
+		background-color:lightblue;
+		}
+	}
+
+
+@media screen and (min-width: 600px) {
+&__item{
+	  @include item;
+  	width: 31%;
+		margin: 1%;
+		height:$item-height--s;
+	}
+
+}
+
+@media screen and (min-width: 1025px) {
+
+ &__item{
+	  @include item;
+  	width: 23%;
+		margin: 1%;
+		height:$item-height--l;
+	}
+}
+
+}
