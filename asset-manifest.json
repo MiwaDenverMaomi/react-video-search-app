@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-video-search-app/static/css/main.d31990a2.css",
+    "main.js": "/react-video-search-app/static/js/main.86dcb92e.js",
+    "index.html": "/react-video-search-app/index.html",
+    "main.d31990a2.css.map": "/react-video-search-app/static/css/main.d31990a2.css.map",
+    "main.86dcb92e.js.map": "/react-video-search-app/static/js/main.86dcb92e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d31990a2.css",
+    "static/js/main.86dcb92e.js"
+  ]
+}
